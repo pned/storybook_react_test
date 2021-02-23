@@ -18,5 +18,5 @@ in `./stories/src/mobile/components/`
 On page loading with no shop selected  
 ![alt text](./stories/assets/images/empty.png)
 
-After selection
+After selection  
 ![](./stories/assets/images/validated.png)
