@@ -1,0 +1,200 @@
+/* Base for label styling */
+input[type="radio"],input[type="checkbox"] {
+  margin: 0;
+}
+
+[type="checkbox"].checkbox:not(:checked),
+[type="checkbox"].checkbox:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"].checkbox-default:not(:checked),
+[type="checkbox"].checkbox-default:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"].checkbox-default:not(:checked) + label,
+[type="checkbox"].checkbox-default:checked + label {
+  position: relative;
+  padding: 0rem 2rem 0 2rem;
+  cursor: pointer;
+}
+/* checkbox aspect */
+[type="checkbox"].checkbox-default:not(:checked) + label:before,
+[type="checkbox"].checkbox-default:checked + label:before {
+  content: '\e91b';
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0; top: -3px;
+  font-size: 1.5rem;
+  color: $paleblue;
+}
+[type="checkbox"].checkbox-default:checked + label:before {
+  content: '\e91c';
+}
+
+
+[type="checkbox"].checkbox-without-label:not(:checked) + label,
+[type="checkbox"].checkbox-without-label:checked + label {
+  position: relative;
+  padding: 0;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+[type="checkbox"].checkbox-without-label:not(:checked) + label:before,
+[type="checkbox"].checkbox-without-label:checked + label:before {
+  content: '\e91b';
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0; top: 0;
+  font-size: 1.5rem;
+  color: $paleblue;
+}
+[type="checkbox"].checkbox-without-label:not(:checked) + label:before,
+[type="checkbox"].checkbox-without-label:checked + label:before {
+  left: 0; top: -1.1rem;
+}
+[type="checkbox"].checkbox-without-label:checked + label:before {
+  content: '\e91c';
+}
+
+/* CHECKBOX RIGHT */
+[type="checkbox"].checkbox-right:not(:checked) + label:before,
+[type="checkbox"].checkbox-right:checked + label:before {
+  content: '\e91b';
+  font-family: 'icomoon';
+  position: absolute;
+  right: 0px; top: -3px;
+  font-size: 1.5rem;
+  color: $paleblue;
+}
+
+[type="checkbox"].checkbox-right:not(:checked) + label,
+[type="checkbox"].checkbox-right:checked + label {
+  position: relative;
+  padding: 0 2rem 0 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+[type="checkbox"].checkbox-right:checked + label:before {
+  content: '\e91c';
+}
+
+/* CHECKBOX SMALL */
+[type="checkbox"].checkbox-sm:not(:checked) + label:before,
+[type="checkbox"].checkbox-sm:checked + label:before {
+  content: '\e91b';
+  font-family: 'icomoon';
+  position: absolute;
+  left: 0; top: -2px;
+  font-size: 1.3rem;
+  color: $mediumgray;
+}
+
+[type="checkbox"].checkbox-sm:not(:checked) + label,
+[type="checkbox"].checkbox-sm:checked + label {
+  position: relative;
+  padding: 0rem 1.7rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: $gray;
+}
+[type="checkbox"].checkbox-sm:checked + label:before {
+  content: '\e91c';
+  color: $paleblue;
+}
+
+/* COLORS */
+[type="checkbox"].checkbox-default--white:not(:checked) + label:before,
+[type="checkbox"].checkbox-default--white:checked + label:before {
+  color: #ffffff;
+}
+
+
+/* SWITCHER */
+input[type=checkbox].switcher{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  display: inherit;
+
+}
+
+/* TAILLE */
+@mixin switcher-taille($width, $height) {
+  width: $width;
+  height: $height + 2;
+  border-radius: $width;
+  &:after {
+    width: $height;
+    height: $height;
+    border-radius: $height;
+  }
+}
+
+.label-switcher {
+  cursor: pointer;
+  /*text-indent: -9999px;*/
+  background: #eeeeee;
+  display: block;
+  position: relative;
+  margin-right: 8px;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: #fff;
+    transition: 0.3s;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.4);
+  }
+}
+.label-switcher:active:after {
+  width: 35px;
+}
+.label-switcher-default {
+  @extend .label-switcher;
+  @include switcher-taille(40px, 22px);
+}
+.label-switcher-big {
+  @extend .label-switcher;
+  @include switcher-taille(50px, 28px);
+}
+
+.label-switcher--nolabel {
+  margin-right: 0px;
+}
+
+
+input.switcher:checked + .label-switcher:after {
+  left: calc(100% - 1px);
+  transform: translateX(-100%);
+}
+
+/* COLORS */
+@mixin switcher-color($color) {
+  background-color: $color;
+  &:before {
+    color: $color;
+  }
+}
+
+input.switcher-paleblue:checked + .label-switcher {
+  @include switcher-color($paleblue);
+}
+input.switcher-green:checked + .label-switcher {
+  @include switcher-color($green);
+}
+.switcher-panel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.switcher-panel__label {
+  display: block;
+  padding-right: 10px;
+}

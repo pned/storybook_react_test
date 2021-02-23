@@ -1,0 +1,37 @@
+.popin-newsletter {
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.9);
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translate3d(0, 100%, 0);
+}
+
+.popin-newsletter--open {
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translate3d(0, 0, 0);
+}
+.popin-newsletter__content {
+    position: relative;
+    padding: 20px 15px;
+    color: #ffffff;
+    font-weight: 700;
+    p {
+        padding: 0 20px 20px 0;
+    }
+}
+.popin-newsletter__content__close {
+    position: absolute;
+    top: 0; right: 0;
+    padding: 15px;
+    .icon-close {
+        color: #ffffff;
+    }
+}
+.popin-newsletter__content__title {
+    display: block;
+    font-size: 1.3rem;
+    padding: 10px 0 3px 0;
+}

@@ -1,0 +1,28 @@
+ul[id^="ui-id-"]{
+  z-index:60000;
+}
+
+ul[id^="ui-id-"] {
+  width: 92%;
+  left: 15px !important;
+  background-color: #F5F6F7;
+  padding: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 70px;
+}
+
+ul[id^="ui-id-"] .ui-menu-item {
+  display: block;
+  padding: 0.3rem 0;
+  text-transform: uppercase
+}
+
+
+ul[id^="ui-id-"] .ui-menu-item strong {
+  color: #D20018
+}
+
+ul[id^="ui-id-"] .ui-menu-item .words2 {
+  color: #303030
+}

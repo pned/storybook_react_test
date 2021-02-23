@@ -1,0 +1,332 @@
+button {
+	border: none;
+	outline: none;
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn.active.focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.btn {
+	display: block;
+	position: relative;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	line-height: 1;
+	border-radius: 0;
+	padding: 0.3rem 0.5rem;
+}
+
+.label-button {
+	display: block;
+	padding-bottom: 0.5rem;
+}
+
+
+/* Taille */
+
+.btn-default {
+	width: 100%;
+	display: block;
+	padding: 0.8rem 1rem;
+	color: $black;
+	text-transform: uppercase;
+	border-radius: 3px;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $black;
+		text-decoration: none;
+	}
+}
+
+.btn-default-sm {
+	@extend .btn-default;
+	padding: 0.6rem 1rem;
+}
+
+.btn-default-lg {
+	@extend .btn-default;
+	padding: 0.6rem 4rem;
+}
+
+.btn-inline {
+	display: inline-block;
+	padding: 0.8rem 1rem;
+	color: $black;
+	font-weight: 700;
+	text-transform: uppercase;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $black;
+		text-decoration: none;
+	}
+}
+
+.btn-inline-sm {
+	@extend .btn-inline;
+	font-size: 0.9rem;
+	padding: 0.5rem 0.8rem;
+}
+
+.btn-block {
+	width: 100%;
+	display: block;
+	padding: 1rem;
+	color: $black;
+	text-transform: uppercase;
+	font-weight: 700;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $black;
+		text-decoration: none;
+	}
+	span {
+		margin: 0 3px;
+	}
+}
+
+.btn-block-sm {
+	@extend .btn-block;
+	padding: 0.7rem;
+}
+
+.btn--min {
+	text-transform: none;
+	font-size: 1.2rem;
+}
+
+.btn--fixe {
+	font-size: 13px;
+	width: 50%;
+	letter-spacing: -0.47px;
+	line-height: 16px;
+	text-align: center;
+	padding: 9px 5px;
+}
+
+
+/* color */
+
+@mixin btn-color($color, $bgcolor) {
+	background-color: $bgcolor;
+	color: $color;
+	border: 1px solid $bgcolor;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $bgcolor;
+		color: $color;
+		text-decoration: none;
+		.ic {
+			color: $bgcolor;
+		}
+	}
+}
+
+@mixin btn-trans-color($color, $bordercolor) {
+	background-color: transparent;
+	color: $color;
+	border: 2px solid $bordercolor;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: transparent;
+		color: $color;
+		text-decoration: none;
+		.ic {
+			color: $color;
+		}
+	}
+}
+
+.btn-bluepale {
+	@include btn-color(#ffffff, $paleblue);
+}
+
+.btn-blue {
+	@include btn-color(#ffffff, #004653);
+}
+
+.btn-blue-light {
+	@include btn-color(#ffffff, #1a6499);
+}
+
+.btn-lightgray {
+	@include btn-color($black, $lightgray);
+}
+
+.btn-red {
+	@include btn-color(#ffffff, $red);
+}
+
+.btn-mediumgray {
+	@include btn-color(#ffffff, $mediumgray);
+}
+
+.btn-white {
+	border: 1px solid $paleblue !important;
+	@include btn-color($paleblue, #ffffff);
+}
+
+.btn-white--b {
+	@include btn-color($black, #ffffff);
+}
+
+.btn-trans-paleblue {
+	@include btn-trans-color($paleblue, $paleblue);
+}
+
+.btn-trans-ocre {
+	@include btn-trans-color($ocre, $ocre);
+}
+
+.btn-trans-white {
+	@include btn-trans-color($black, #ffffff);
+}
+
+.btn-trans-red {
+	border: 1px solid $red !important;
+	@include btn-color($red, #ffffff);
+}
+
+.btn-trans-blue {
+	border: 1px solid $blue !important;
+	@include btn-color($blue, #ffffff);
+}
+
+.btn-gray {
+	@include btn-color(#ffffff, #93aabc);
+}
+
+.btn-anthracite {
+	@include btn-color(#ffffff, #444444);
+}
+
+.btn-light-gray {
+	@include btn-color(#ffffff, #d7d7d7);
+}
+
+.btn-green {
+	@include btn-color(#ffffff, #39a033);
+}
+
+
+/* CUSTOM */
+
+.btn-search {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.8rem 1rem;
+	background-color: #d9e1e7;
+	color: rgba($black, 0.7);
+	font-size: 1rem;
+	border-radius: 4px;
+	box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: #d9e1e7;
+		color: rgba($black, 0.7);
+		text-decoration: none;
+	}
+	input::placeholder {
+		color: rgba($black, 0.7);
+	}
+}
+
+.btn-fixed {
+	position: fixed;
+	bottom: 0;
+	z-index: 11;
+	width: 100%;
+	.btn {
+		height: 50px;
+		line-height: 2em;
+	}
+	.btn-panier {
+		height: auto !important;
+		line-height: 2em;
+	}
+}
+
+.btn-maps {
+	position: relative;
+	display: block;
+	.position-1 {
+		position: absolute;
+		left: 11%;
+		bottom: 48%;
+		img {
+			width: 25px;
+		}
+		&.p-32-b {
+			bottom: 32%;
+		}
+	}
+	.position-2 {
+		position: absolute;
+		left: 39%;
+		bottom: 26%;
+		img {
+			width: 25px;
+		}
+		&.p-14-b {
+			bottom: 14%;
+		}
+	}
+	.position-3 {
+		position: absolute;
+		left: 80%;
+		bottom: 40%;
+		img {
+			width: 25px;
+		}
+	}
+	.position-current {
+		position: absolute;
+		left: 41%;
+		top: 27%;
+		img {
+			width: 40px;
+		}
+		.img-45 {
+			width: 45px;
+		}
+	}
+	.position-4 {
+		position: absolute;
+		left: 11%;
+		top: 25%;
+		img {
+			width: 25px;
+		}
+	}
+	.position-5 {
+		position: absolute;
+		left: 30%;
+		top: 10%;
+		img {
+			width: 25px;
+		}
+	}
+	.position-6 {
+		position: absolute;
+		left: 60%;
+		top: 10%;
+		img {
+			width: 25px;
+		}
+	}
+}

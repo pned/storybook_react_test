@@ -1,0 +1,253 @@
+#energyLabelDiv .a1, #energyLabelDiv .a2, #energyLabelDiv .a3 {
+  background-size: 90% !important;
+}
+#ficheResumeCarousel.slick-initialized .item{
+  display: block !important;
+}
+
+.section-store--overlay{
+  padding:15px 0;
+}
+
+.fiche-carousel-energy-label-a_plus_plus_plus {
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  left: 0;
+  background-color: #00a751;
+  padding: 0 4px 0 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  span {
+    font-size: 0.8rem;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #00a751;
+  }
+}
+
+.fiche-carousel-energy-label-a_plus_plus {
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  left: 0;
+  background-color: #4fb947;
+  padding: 0 4px 0 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  span {
+    font-size: 0.8rem;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #4fb947;
+  }
+}
+
+.fiche-carousel-energy-label-a_plus {
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  left: 0;
+  background-color: #c1d82d;
+  padding: 0 4px 0 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  span {
+    font-size: 0.8rem;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #c1d82d;
+  }
+}
+
+.fiche-carousel-energy-label-a {
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  left: 0;
+  background-color: #fef200;
+  padding: 0 4px 0 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  span {
+
+    font-size: 0.8rem;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fef200;
+  }
+}
+
+.fiche-carousel-energy-label-b {
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  left: 0;
+  background-color: #fcba0b;
+  padding: 0 4px 0 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  span {
+
+    font-size: 0.8rem;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fcba0b;
+  }
+}
+
+.fiche-carousel-energy-label-c {
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  left: 0;
+  background-color: #f3711a;
+  padding: 0 4px 0 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  span {
+
+    font-size: 0.8rem;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #f3711a;
+  }
+}
+
+.fiche-carousel-energy-label-d {
+
+  position: absolute;
+  z-index: 2;
+  top: 52px;
+  left: 0;
+  background-color: #ed141f;
+  padding: 0 4px 0 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  span {
+
+    font-size: 0.8rem;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #ed141f;
+  }
+}
+
+a.energy-label:active, a.energy-label:focus, a.energy-label:hover{
+  outline: 0;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.fiche-resume__status span.availability-in__shops {
+    font-size: 14px !important;
+}
+
+.fiche-resume__status.check-availibility {
+  border-top: 0px !important ;
+}
+
+.bg-white .days:after {
+  content: 'j';
+  position: absolute;
+
+}
+.bg-white .hours {
+  margin: 0 3px 0 5px
+}
+.bg-white .hours:after {
+  content: 'h';
+  position: absolute;
+
+}
+.bg-white .minutes {
+  margin: 0 6px 0 5px
+}
+.bg-white .minutes:after {
+  content: 'm';
+  position: absolute;
+}
+.bg-white .seconds {
+  margin: 0 6px 0 5px
+}
+.bg-white .seconds:after {
+  content: 's';
+  position: absolute;
+}

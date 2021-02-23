@@ -1,0 +1,393 @@
+.filter {
+    display: none;
+    z-index: 32;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+.filter__sticky-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 33;
+}
+.filter__header {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+.filter__header__title {
+    display: block;
+    font-size: 1.3rem;
+}
+.filter__header__reinit {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: $red;
+}
+.filter__header__close {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 0 0 10px;
+}
+
+.filter__body {
+    position: relative;
+    height: 100%;
+    padding-bottom: 40px;
+    overflow-y: scroll;
+}
+.filter__body__empty {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p {
+        margin: 1rem 0;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    .icon-filtre {
+        color: $gray;
+    }
+}
+.filter__body__title {
+    display: block;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.filter__body__label {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.filter__body__label__item {
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid $paleblue;
+    border-radius: 20px;
+    font-weight: 700;
+    background-color: #ffffff;
+    transition: 0.5s background-color;
+    span {
+        color: $paleblue;
+    }
+}
+.filter__body__label__item--active {
+    background-color: $paleblue;
+    transition: 0.5s background-color;
+    span {
+        color: #ffffff;
+    }
+}
+.filter__body__category {
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $bordergray;
+    .icon-expand {
+        transform: rotate(180deg);
+        transition: 0.5s transform;
+    }
+}
+.filter__body__category.collapsed {
+    .icon-expand {
+        transform: rotate(0deg);
+        transition: 0.5s transform;
+    }
+}
+.filter__body__category__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.filter__body__collapse {
+    padding-left: 10px;
+}
+.filter__body__collapse--error {
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #E2001A;
+    letter-spacing: -0.64px;
+
+}
+.filter__body__collapse--scroll {
+    max-height: 205px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.filter__body__collapse__row {
+    display: flex;
+    width: 100%;
+    padding: 14px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $bordergray;
+    &:last-child {
+        border: none;
+    }
+}
+.filter__body__collapse__link {
+    display: block;
+    padding: 10px 50px;
+    max-width: 176px;
+    margin:0 auto 10px;
+    background: #F5F6F7;
+    font-weight: 700;
+    font-size: 13px;
+    color: #303030;
+    letter-spacing: -0.47px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.filter__body__collapse__color {
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter__body__collapse__color__item {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $paleblue;
+    margin: 0 7px 7px 0;
+    .icon-check_magasin {
+        color: #ffffff;
+        opacity: 0;
+        transition: 0.4s opacity;
+    }
+    &.motifs {
+        background-image: url(https://www.but.fr/fstrz/r/s/www.but.fr/Sources/Mobilev2/images/motif_bg.png?frz-v=114);
+        background-size:100% 100%;
+    }
+}
+.filter__body__collapse__color__item--active {
+    border-width: 5px;
+    .icon-check_magasin {
+        opacity: 1;
+        transition: 0.4s opacity;
+    }
+}
+.filter__body__collapse__color__item--white {
+    .icon-check_magasin {
+        color: $paleblue;
+    }
+}
+
+.filter__body__collapse__slider {
+    padding: 15px;
+}
+.filter__body__collapse__slider__amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5px 20px 5px;
+}
+.filter__body__collapse__slider__min {
+    display: block;
+    color: $gray;
+}
+.filter__body__collapse__slider__max {
+    display: block;
+    color: $gray;
+}
+
+.filter__body__collapse__avis {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+.filter__body__collapse__avis__item {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid $paleblue;
+    border-radius: 20px;
+    margin: 0 5px 10px 0;
+    transition: 0.5s background-color;
+    background-color: #ffffff;
+    span {
+        margin: 0 1px;
+    }
+    .icon-etoile {
+        color: $yellow;
+    }
+    .icon-etoile_vide {
+        color: $mediumgray;
+    }
+}
+.filter__body__collapse__avis__item--active {
+    background-color: $paleblue;
+    transition: 0.5s background-color;
+}
+
+.current-filter {
+    position: relative;
+    border-bottom: 1px solid $bordergray;
+}
+.current-filter__item {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 5px;
+    color: #ffffff;
+    background-color: $paleblue;
+    border:1px solid $paleblue;
+    border-radius: 20px;
+    &:first-child {
+        margin-left: 10px;
+    }
+    &:last-child {
+        margin-right: 10px;
+    }
+    &.blanc {
+        color: $paleblue;
+        background-color: $white;
+        border:1px solid $paleblue;
+    }
+}
+.current-filter__item__name {
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+$scrollBarHeight: 1px;
+
+::-webkit-scrollbar {
+    width: $scrollBarHeight;
+    height: $scrollBarHeight;
+}
+
+::-webkit-scrollbar-button {
+    width: $scrollBarHeight;
+    height: $scrollBarHeight;
+}
+.current-filter__content {
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+.filter__body__collapse__color__item.blanc {
+    background-color: #fff
+}
+
+.filter__body__collapse__color__item.gris {
+    background-color: #a4a4a4
+}
+
+.filter__body__collapse__color__item.grisfonce {
+    background-color: #373737
+}
+
+.filter__body__collapse__color__item.noir {
+    background-color: #000000
+}
+
+.filter__body__collapse__color__item.bleu {
+    background-color: #258ccf
+}
+
+.filter__body__collapse__color__item.rouge {
+    background-color: #c62525
+}
+
+.filter__body__collapse__color__item.jaune {
+    background-color: #fde03c
+}
+
+.filter__body__collapse__color__item.violet {
+    background-color: #9c48b7
+}
+
+.filter__body__collapse__color__item.rose {
+    background-color: #ff989e
+}
+
+.filter__body__collapse__color__item.vert {
+    background-color: #66b11c
+}
+
+.filter__body__collapse__color__item.marron {
+    background-color: #703c09
+}
+
+.filter__body__collapse__color__item.taupe {
+    background-color: #a48c86
+}
+
+.filter__body__collapse__color__item.orange {
+    background-color: #ff902d
+}
+
+.filter__body__collapse__color__item.mauve {
+    background-color: #be89dc
+}
+.filter__row__search {
+    position: relative;
+    &--input{
+        width: 100%;
+        padding:10px 5px 15px 23px;
+        border-bottom: 1px solid $bordergray;
+        font-size: 14px;
+        font-weight: 400;
+        &.error { border-bottom: 1px solid $red; }
+    }
+    &--picture {
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+}
+
+.select-tri {
+    width:100%;
+    padding-left: 7px;
+    text-align: left;
+    text-transform: uppercase;
+    text-align-last: left;
+    option {
+        text-align: left;
+    }
+}
+/*.filter__body__collapse__color__item.boisclair {
+    background-image: url(../../Images/bois-clair.png)
+}
+
+.filter__body__collapse__color__item.metalfonce {
+    background-image: url(../../Images/metalfonce.png)
+}
+
+.filter__body__collapse__color__item.metalclair {
+    background-image: url(../../Images/metalclair.png)
+}
+
+.filter__body__collapse__color__item.boisfonce {
+    background-image: url(../../Images/bois-fonce.png)
+}*/

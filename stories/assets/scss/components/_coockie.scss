@@ -1,0 +1,38 @@
+.coockie {
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.9);
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translate3d(0, 100%, 0);
+}
+
+.coockie--open {
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translate3d(0, 0, 0);
+}
+.coockie__content {
+    position: relative;
+    padding: 20px 15px;
+    color: #ffffff;
+    font-weight: 700;
+    p {
+        padding-right: 30px;
+        font-size: 0.8rem;
+        text-align: justify;
+        line-height: 1.3rem;
+    }
+}
+.coockie__content__close {
+    position: absolute;
+    top: 0; right: 0;
+    padding: 15px;
+    .icon-close {
+        color: #ffffff;
+    }
+}
+.coockie__content__link {
+    text-decoration: underline;
+}

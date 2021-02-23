@@ -1,0 +1,27 @@
+.vente_privee h4 {
+  color: #131b35;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 0;
+  text-align: center;
+  text-transform: uppercase
+}
+.vente_privee p {
+  color: #696969;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center
+}
+.vente_privee p > span {
+  display:block ;
+}
+
+.section-chat__alert__error {
+  padding: 10px 15px;
+  background-color: red;
+  color:$white;
+  text-align: center;
+}

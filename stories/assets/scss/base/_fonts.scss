@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+body,html {
+    font-size: 12px;
+    font-family: 'Lato', Arial, sans-serif;
+    color: $black;
+    line-height: 1;
+    /*-moz-font-feature-settings: "kern", "liga" 0, "calt" 0;
+    -ms-font-feature-settings: "kern", "liga" 0, "calt" 0;
+    -o-font-feature-settings: "kern", "liga" 0, "calt" 0;
+    -webkit-font-feature-settings: "kern", "liga" 0, "calt" 0;
+    font-feature-settings: "kern", "liga" 0, "calt" 0;*/
+}
+h1,
+.h1 {
+    font-size: 1.8rem;
+}
+
+h2,
+.h2 {
+    font-size: 1.4rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.3rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.2rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.1rem;
+}
+
+h6,
+.h6 {
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+@media screen and (min-width: 360px) {
+    body,
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    body,
+    html {
+        font-size: 16px;
+    }
+}

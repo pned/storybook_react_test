@@ -1,0 +1,46 @@
+/* VARIABLES */
+@import "base/const";
+
+/* MATERIAL BOOTSTRAP */
+@import 'bootstrap/scss/bootstrap.scss';
+
+@import "base/layout";
+@import "base/utilities";
+@import "base/fonts";
+@import "base/icons";
+@import "base/color";
+@import "patchs/fontAwesome";
+
+/* COMPONENTS */
+@import "components/nav";
+@import "components/paragraphe";
+@import "components/topbar";
+@import "components/btn";
+@import "components/footer";
+@import "components/breadcrumb";
+@import "components/components";
+@import "components/form";
+@import "components/search";
+@import "components/shop";
+@import "components/select-bootstrap";
+@import "components/modal";
+@import "components/tabs";
+@import "components/timeline";
+
+/*  PATCHS  */
+@import "patchs/common.scss";
+
+/*DOM-TOM*/
+.pageBody {
+  margin: 20px 15px;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.title {
+  font-size: 1.125em;
+  line-height: 21.6px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+

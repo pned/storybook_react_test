@@ -1,0 +1,97 @@
+.payment3x-panel {
+    padding: 0 12px;
+    border-bottom: 15px solid $lightgray;
+    &:last-child {
+        border: none;
+    }
+    .paragraphe-small {
+        font-size: 0.9rem;
+        padding-top: 15px;
+        line-height: 1.2;
+    }
+    
+}
+.tunnel-navs-tabs--payment {
+    padding-bottom: 25px !important;
+    .nav-tabs li {
+        font-size: 0.8rem !important;
+        line-height: 1.2 !important;
+    }
+    .nav-tabs a,.nav-tabs a.active {
+        height: 100%;
+        display: table-cell !important;
+        height: 4.5rem;
+        vertical-align: middle;
+    }
+}
+.payment3x-panel__content {
+    padding-top: 15px;
+    border-top: 1px solid $bordergray;
+}
+.payment3x-panel__content__title {
+    display: block;
+    padding-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.payment3x-panel__content__illus {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+.payment3x-panel__content__illus__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    color: $gray;
+    border-right: 1px solid $bordergray;
+    &:last-child {
+        border: none;
+    }
+    span {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        line-height: 1.1;
+    }
+    .num {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        border-radius: 50%;
+        background-color: $red;
+        color: #ffffff;
+    }
+    .image {
+        height: 3rem;
+        line-height: 4rem;
+    }
+    img {
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+}
+.payment3x-panel__content__block {
+    padding: 12px;
+    background-color: $paleblue;
+    color: #ffffff;
+    margin-bottom: 15px;
+    .title {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-bottom: 2px;
+    }
+    p {
+        padding-bottom: 0;
+    }
+}
+.payment3x-panel__infos {
+    padding-top: 20px;
+}
+.payment3x-panel__infos__img {
+    height: 2.6rem;
+    margin-bottom: 15px;
+}

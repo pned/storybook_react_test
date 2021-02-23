@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot');
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'icomoon2';
+  src: url('../fonts/icomoon2.ttf');
+  src: url('../fonts/icomoon2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+  }
+  .icon-xs {
+    font-size: 0.3rem;
+  }
+  .icon-sm {
+    font-size: 0.8rem;
+  }
+  .icon-md {
+      font-size: 1.2rem;
+  }
+  .icon-2x {
+      font-size: 1.5rem;
+  }
+  .icon-lg {
+    font-size: 1.7rem;
+  }
+  .icon-3x {
+    font-size: 1.9rem;
+  }
+  img.icon-3x {
+    height: 1.929rem;
+  }
+  .icon-4x {
+    font-size: 3rem;
+  }
+  
+  .icon-valid {
+    color: $green !important;
+  }
+  .icon-round {
+    border: 1px solid $black;
+    border-radius: 50%;
+  }
+  .icon-round--md {
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    margin-right: 5px;
+  }
+  .icon-round--green {
+    border-color: $green;
+  }
+  
+
+  .icon-enveloppe:before {
+    content: "\e906";
+  }
+  .icon-horloge:before {
+    content: "\e923";
+  }
+  .icon-oeil_ferme:before {
+    content: "\e92b";
+  }
+  .icon-coeur_plein:before {
+    content: "\e92c";
+  }
+  .icon-check_confirmation:before {
+    content: "\e92d";
+  }
+  .icon-panier_moins:before {
+    content: "\e929";
+  }
+  .icon-panier_plus:before {
+    content: "\e92a";
+  }
+  .icon-ajout_panier:before {
+    content: "\e928";
+  }
+  .icon-plus:before {
+    content: "\e927";
+  }
+  .icon-clean_search:before {
+    content: "\e926";
+  }
+  .icon-etoile_vide:before {
+    content: "\e908";
+  }
+  .icon-historique:before {
+    content: "\e925";
+    color: #666;
+  }
+  .icon-phone:before {
+    content: "\e924";
+  }
+  .icon-loupe:before {
+    content: "\e922";
+  }
+  .icon-close_menu:before {
+    content: "\e900";
+  }
+  .icon-delete:before {
+    content: "\e901";
+  }
+  .icon-expand:before {
+    content: "\e902";
+  }
+  .icon-back:before {
+    content: "\e903";
+  }
+  .icon-burger:before {
+    content: "\e904";
+  }
+  .icon-chevron:before {
+    content: "\e905";
+  }
+  .icon-close:before {
+    content: "\e91a";
+  }
+  .icon-check_vide:before {
+    content: "\e91b";
+    color: #b7bdc2;
+  }
+  .icon-check_plein:before {
+    content: "\e91c";
+  }
+  .icon-check_magasin:before {
+    content: "\e91d";
+  }
+  .icon-camion .path1:before {
+    content: "\e91e";
+    color: rgb(48, 48, 48);
+  }
+  .icon-camion .path2:before {
+    content: "\e91f";
+    margin-left: -1.5498046875em;
+    color: rgb(48, 48, 48);
+  }
+  .icon-camion .path3:before {
+    content: "\e920";
+    margin-left: -1.5498046875em;
+    color: rgb(48, 48, 48);
+  }
+  .icon-camion .path4:before {
+    content: "\e921";
+    margin-left: -1.5498046875em;
+    color: rgb(58, 58, 58);
+  }
+  .icon-geoloc:before {
+    content: "\e907";
+  }
+  .icon-donwload:before {
+    content: "\e909";
+  }
+  .icon-etoile:before {
+    content: "\e90a";
+  }
+  .icon-info:before {
+    content: "\e90b";
+  }
+  .icon-facebook:before {
+    content: "\e90c";
+  }
+  .icon-insta:before {
+    content: "\e90d";
+  }
+  .icon-pinterest:before {
+    content: "\e90e";
+  }
+  .icon-twitter:before {
+    content: "\e90f";
+  }
+  .icon-oeil:before {
+    content: "\e910";
+  }
+  .icon-x-sans-frais:before {
+    content: "\e911";
+  }
+  .icon-retours:before {
+    content: "\e912";
+  }
+  .icon-magasin:before {
+    content: "\e913";
+  }
+  .icon-wishlist:before {
+    content: "\e914";
+  }
+  .icon-i:before {
+    content: "\e915";
+  }
+  .icon-home:before {
+    content: "\e916";
+  }
+  .icon-panier:before {
+    content: "\e917";
+  }
+  .icon-pin:before {
+    content: "\e918";
+  }
+  .icon-compte:before {
+    content: "\e919";
+  }
+.icon-etoile-half {
+  display: inline-block;
+  color: $mediumgray;
+  position: relative;
+}
+
+.icon-etoile-half::before {
+  content: "\e90a";
+}
+
+.icon-etoile-half:after {
+  content: "\e90a";
+  color: $blue;
+  position: absolute;
+  left: 0;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.icon-sablier:before {
+  content: "\e900";
+  font-family: 'icomoon2';
+}

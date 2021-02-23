@@ -1,0 +1,17 @@
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.page {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+}
+body.menu-open {
+    overflow-y: hidden;
+}
