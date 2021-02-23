@@ -8,8 +8,9 @@ Storybook test
 * `npm install`
 * `npm run storybook`
 
-Please commit on a new branch a make a pull request.
-Add you css style in `./stories/assets/scss/dom-tom.scss` and the new components 
+Please commit on a new branch and make a pull request.
+Create several components and call then in `./stories/assets/scss/dom-tom.js`, 
+add your css style in `./stories/assets/scss/dom-tom.scss` and the new components 
 in `./stories/src/mobile/components/`
 
 ### Expected render
