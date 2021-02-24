@@ -1,29 +1,9 @@
-import React from 'react';
-
-import {Button} from './index';
-import {INITIAL_VIEWPORTS} from "@storybook/addon-viewport";
+import React from "react";
+import Button from "./Button";
 
 export default {
-    title: 'Mobile/Components',
-    component: Button,
-    parameters: {
-        viewport: {
-            viewports: INITIAL_VIEWPORTS,
-            defaultViewport: 'iphonex'
-        },
-    }
+  title: "Mobile/Components",
+  component: Button,
 };
 
-const Template = (args) => <Button {...args} />;
-
-export const button = Template.bind({});
-
-button.parameters = {
-    viewport: {
-        defaultViewport: 'iphonex'
-    }
-};
-button.args = {
-    enabled: false,
-    children: 'Je Valide'
-};
+export const button = () => <Button/>;
