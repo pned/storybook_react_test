@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  height: 100vh;
+}
+
+.FormWrapper {
+  background-color: #ecf0f1;
+  padding: 10px;
+  min-width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SelectWrapper {
+  background-color: green;
+  display: flex;
+  width: 99%;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+select {
+  /* background-color: pink; */
+  display: block;
+  border: 2px solid #1abc9c;
+  height: 50px;
+  flex-grow: 1;
+  border-radius: 3px;
+}
+select:focus {
+  outline: none;
+}
+
+.ShopDetailsWrapper {
+  /* background-color: green; */
+  line-height: 0;
+  width: 99%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.ShopDetailsWrapper h3 {
+  margin-bottom: px;
+}
+
+.ButtonWrapper {
+  background-color: green;
+  display: flex;
+  width: 99%;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+button {
+  height: 40px;
+  flex-grow: 1;
+  border: none;
+  border-radius: 3px;
+}
+
+button:focus {
+  outline: none;
+}
